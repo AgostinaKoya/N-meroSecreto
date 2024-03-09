@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d05ae169f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Número Secreto</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/Images/background-img/magic-show.png"
+        class="image_title"
+        alt="Magic hat image"
+      />
+
+      <p class="title">Adivina el número secreto</p>
+
+      <button id="registerButton">Registrarse</button>
+
+      <div id="userName"></div>
+    </header>
+    <main class="sectionContainer">
+      <section class="registrationContainer">
+        <form class="registrationForm">
+          <label for="userRegister">Usuario </label>
+          <input type="text" name="userRegister" id="userRegister" />
+          <div class="userGroup">
+            <div class="validationError">
+             <p>Debe contener entre 3 y 16 caracteres.</p> 
+              <p>Puede contener (.) y (-)</p>
+            </div>
+            
+          </div>
+
+          <label for="password">Password </label>
+          <input type="password" name="password" id="password" />
+          <div class="passwordGroup">
+            <div class="validationError">
+              <p>Debe contener entre 5 y 16 caracteres.</p> 
+              <p>Debe contener al menos 1 mayúscula, 1 minúscula y 1 número</p>
+            </div>
+          </div>
+          <label for="repeatedPassword">Repetir password </label>
+          <input
+            type="password"
+            name="repeatedPassword"
+            id="repeatedPassword"
+          />
+          <div class="validationPasswordGroup">
+            <p class="validationError">Las contraseñas no coinciden</p>
+          </div>
+          <div class="validationAll">
+            <p>Completa todos los campos</p>
+          </div>
+
+          <div class="buttonsContainer">
+            <button type="button" id="cancelButton">Cancelar</button>
+            <button type="submit" id="submitButton">Registrarme</button>
+          </div>
+        </form>
+      </section>
+      <div class="gameSection">
+        <section class="guessSection">
+          <p>Elije un número del 1 al 15</p>
+          <input id="choiceNumber" type="number" min="1" />
+          <button id="guessButton">Adivinar</button>
+          <button id="playAgainButton">Volver a Jugar</button>
+        </section>
+
+        <section class="logs">
+          <div class="mistery-box">
+            <img class="image-box" src="/Images/background-img/glitter.png" />
+            <spam class="mistery-number"></spam>
+          </div>
+
+          <div class="gameLogs"></div>
+          <div class="attempsContainer">
+            <div class="attempsText">Intentos restantes:</div>
+            <div class="lifePoints"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
