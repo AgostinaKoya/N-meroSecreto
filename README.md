@@ -3,3 +3,5 @@
 Este juego desafía a los jugadores a adivinar un número secreto en tan solo 5 intentos. ¿Crees que puedes descifrarlo?
 
  `HTML` `CSS` `JavaScript` 
+
+link: https://coffeemasters-18e86.web.app
