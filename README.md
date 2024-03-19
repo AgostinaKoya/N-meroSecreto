@@ -4,4 +4,4 @@ Este juego desafía a los jugadores a adivinar un número secreto en tan solo 5 
 
  `HTML` `CSS` `JavaScript` 
 
-link: [secretnumber-60489.web.app](https://secretnumber-60489.web.app/)https://secretnumber-60489.web.app/
+link: https://secretnumber-60489.web.app
